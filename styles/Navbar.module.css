@@ -1,0 +1,100 @@
+.container {
+    align-items: center;
+    background-color: #d1411e;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    justify-content: space-between;
+    padding: 0px 50px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  .item {
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    flex: 1;
+  }
+  .item:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    flex: 3;
+  }
+  .item:last-child {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .callButton {
+    flex-shrink: 0;
+    background-color: #fff;
+    border-radius: 50px;
+    height: 50px!important;
+    padding: 10px;
+    width: 50px!important;
+    cursor: pointer;
+  }
+  .texts {
+    color: #fff;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  .text:first-child {
+    font-size: 12px;
+    font-weight: 500;
+    justify-content: flex-start;
+  }
+  .text:last-child {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .list {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  .listItem {
+    font-weight: 500;
+    margin: 20px;
+    cursor: pointer;
+  }
+  .cart {
+    flex-shrink: 0;
+    position: relative;
+    cursor: pointer;
+  }
+  .cartNumber {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #d1411e;
+    display: flex;
+    font-weight: 500;
+    height: 20px;
+    justify-content: center;
+    padding: 3px;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 20px;
+  }
+  .logo {
+      min-width: 50px;
+  }
+
+  @media screen and (max-width: 700px) {
+    .item:nth-child(2) {
+      display: none;
+    }
+    .item:nth-child(1) {
+      flex: 3;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .text:last-child {
+        display: none;
+    }
+  }
